@@ -6,8 +6,10 @@ import Signup from './pages/Signup';
 import Courses from './pages/Courses';
 import CourseDetail from './pages/CourseDetail';
 import CourseSelector from './pages/CourseSelector';
+import Pricing from './pages/Pricing';
 import About from './pages/About';
-
+import FAQ from './pages/FAQ';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -19,7 +21,10 @@ function App() {
         <Route path="/courses" element={<Courses />} />
         <Route path="/courses/:id" element={<CourseDetail />} />
         <Route path="/course-selector" element={<CourseSelector />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="/about" element={<About />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
